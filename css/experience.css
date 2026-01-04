@@ -3,6 +3,7 @@
 }
 
 .experience_projects>p {
+    color: #525252;
     font-size: 1.25rem;
     line-height: 1.33;
     max-width: 40ch;
@@ -49,12 +50,6 @@
 }
 
 @media (max-width: 800px) {
-
-    .experience {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
-    }
-
     .experience .subtitle {
         color: #141414;
     }

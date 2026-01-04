@@ -1,0 +1,138 @@
+.formation {
+    background: #141414;
+    color: #fff;
+}
+
+.formation .container {
+    position: relative;
+}
+
+.formation .container::before {
+    content: '';
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url('../img/detalhe.svg') no-repeat center;
+    position: absolute;
+    bottom: -50px;
+    left: 20px;
+}
+
+.formation .subtitle {
+    color: #000;
+    max-width: 5ch;
+}
+
+.formation_content>p {
+    font-size: 1.25rem;
+    line-height: 1.33;
+    max-width: 40ch;
+    margin-bottom: 3.75rem;
+    color: #a3a3a3;
+}
+
+.formation_content>p>strong {
+    color: #ffffff;
+}
+
+.graduation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 3.75rem;
+}
+
+.graduation li {
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    flex: 1;
+    padding: 1.25rem;
+    border-radius: 0.25rem;
+}
+
+.dec_formation {
+    color: #a3a3a3;
+    font-size: .875rem;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.graduation li>h3 {
+    flex: 1;
+    position: relative;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    margin: 0 0 40px 0;
+}
+
+
+.graduation li>h3::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    top: 0;
+    left: -24px;
+    border-radius: 4px 0 0 4px;
+    background-color: rgb(87, 255, 9);
+}
+
+.formation_extra h3 {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #8f8f8f;
+    text-transform: uppercase;
+    margin-bottom: 1.875rem;
+    position: relative;
+}
+
+.formation_extra h3::before {
+    display: block;
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: -36px;
+    top: -4px
+}
+
+.courses h3::before {
+    background: url("../img/cursos.svg") no-repeat center center;
+}
+
+.languages h3::before {
+    background: url("../img/idiomas.svg") no-repeat center center;
+}
+
+.formation_extra li {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    margin: 0 0 1.25rem 0;
+}
+
+.formation_extra span {
+    color: #8f8f8f;
+}
+
+.courses {
+    margin: 0 0 3.75rem 0;
+}
+
+.courses li {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+    .formation .subtitle {
+        color: #FFFFFF;
+    }
+
+    .formation_extra h3::before {
+        position: static;
+        margin: 0 0 0.625rem 0;
+    }
+
+}
