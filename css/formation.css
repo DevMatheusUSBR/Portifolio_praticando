@@ -136,3 +136,9 @@
     }
 
 }
+
+@media (max-width: 500px) {
+    .formation .container::before {
+        display: none;
+    }
+}
